@@ -1,129 +1,216 @@
-# Byte-compiled / optimized / DLL files
+# Criado por https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,jupyternotebooks,data
+# Edite em https://www.toptal.com/developers/gitignore?templates=python,visualstudiocode,jupyternotebooks,data
+
+### Dados ###
+*.csv
+*.dat
+*.efx
+*.gbr
+*.chave
+*.pps
+*.ppt
+*.pptx
+*.sdf
+*.imposto2010
+*.vcf
+*.xml
+
+### JupyterNotebooks ###
+# gitignore template para Jupyter Notebooks
+# site: http://jupyter.org/
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+#IPython
+profile_default/
+ipython_config.py
+
+# Remove ipynb_checkpoints anteriores
+# git rm -r .ipynb_checkpoints/
+
+### Pitão ###
+# Arquivos compilados por byte / otimizados / DLL
 __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
-*.so
+# Extensões C
+*.então
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
+# Distribuição/embalagem
+.Pitão
+construir/
+desenvolver-ovos/
+dist./
+Transferências/
+ovos/
+.ovos/
 lib/
 lib64/
-parts/
+peças/
 sdist/
 var/
-wheels/
-pip-wheel-metadata/
+rodas/
 share/python-wheels/
 *.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+.instalado.cfg
+*.ovo
+MANIFESTO
 
 # PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
+# Normalmente esses arquivos são escritos por um script python de um template
+# antes que o PyInstaller construa o exe, para injetar data/outras informações nele.
+*.manifesto
 *.spec
 
-# Installer logs
+# Logs do instalador
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
+# Teste de unidade / relatórios de cobertura
 htmlcov/
 .tox/
 .nox/
-.coverage
-.coverage.*
+.cobertura
+.cobertura.*
 .cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
+nariztests.xml
+cobertura.xml
+*.cobrir
+*.py,capa
+.hipótese/
 .pytest_cache/
+cobrir/
 
-# Translations
+# Traduções
 *.mo
-*.pot
+*.Panela
 
-# Django stuff:
-*.log
+# Coisas do Django:
+*.registro
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
-# Flask stuff:
-instance/
+# Material do frasco:
+instância/
 .webassets-cache
 
-# Scrapy stuff:
+# Coisas de scrap:
 .scrapy
 
-# Sphinx documentation
+# Documentação da esfinge
 docs/_build/
 
-# PyBuilder
-target/
+#PyBuilder
+.pybuilder/
+alvo/
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Notebook Jupyter
 
-# IPython
-profile_default/
-ipython_config.py
+#IPython
 
-# pyenv
-.python-version
+#pyenv
+# Para uma biblioteca ou pacote, você pode querer ignorar esses arquivos, pois o código é
+# destinado a ser executado em vários ambientes; caso contrário, verifique-os em:
+# .python-version
 
 # pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
+# De acordo com pypa/pipenv#598, é recomendado incluir Pipfile.lock no controle de versão.
+# No entanto, em caso de colaboração, se houver dependências ou dependências específicas da plataforma
+# sem suporte multiplataforma, o pipenv pode instalar dependências que não funcionam ou não
+# instala todas as dependências necessárias.
 #Pipfile.lock
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+#poesia
+# Semelhante ao Pipfile.lock, geralmente é recomendado incluir poesia.lock no controle de versão.
+# Isto é especialmente recomendado para pacotes binários para garantir a reprodutibilidade, e é mais
+# comumente ignorado para bibliotecas.
+# https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poesia.lock
+
+# pdm
+# Semelhante ao Pipfile.lock, geralmente é recomendado incluir pdm.lock no controle de versão.
+#pdm.lock
+# pdm armazena as configurações de todo o projeto em .pdm.toml, mas é recomendável não incluí-lo
+# no controle de versão.
+# https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; usado por exemplo github.com/David-OConnor/pyflow e github.com/pdm-project/pdm
 __pypackages__/
 
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
+#Coisas de aipo
+aipo-schedule
+aipo.pid
 
-# SageMath parsed files
+# Arquivos analisados ​​pelo SageMath
 *.sage.py
 
-# Environments
+# Ambientes
 .env
 .venv
-env/
+ambiente/
 venv/
 ENV/
 env.bak/
 venv.bak/
 
-# Spyder project settings
+# Configurações do projeto Spyder
 .spyderproject
 .spyproject
 
-# Rope project settings
+# Configurações do projeto de corda
 .ropeproject
 
-# mkdocs documentation
-/site
+# documentação do mkdocs
+/local
 
-# mypy
+#mypy
 .mypy_cache/
 .dmypy.json
 dmypy.json
 
-# Pyre type checker
+# Verificador de tipo Pyre
 .pyre/
+
+# pytype analisador de tipo estático
+.pytype/
+
+# Símbolos de depuração do Cython
+cython_debug/
+
+#PyCharm
+# O modelo específico do JetBrains é mantido em um JetBrains.gitignore separado que pode
+# pode ser encontrado em https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+# e pode ser adicionado ao gitignore global ou mesclado neste arquivo. Por uma energia mais nuclear
+# opção (não recomendado) você pode descomentar o seguinte para ignorar toda a pasta de ideias.
+#.idéia/
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Histórico local para código do Visual Studio
+.história/
+
+# Extensões de código do Visual Studio construídas
+*.vsix
+
+### Patch VisualStudioCode ###
+# Ignora todo o histórico local de arquivos
+.história
+.ionida
+
+# Suporte para escopo do snippet de projeto
+.vscode/*.code-snippets
+
+# Ignora code-workspaces
+*.code-workspace
+
+# Fim de https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,jupyternotebooks,data
